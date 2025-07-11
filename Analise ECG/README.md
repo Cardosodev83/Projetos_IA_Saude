@@ -32,8 +32,8 @@ Para limpar o sinal, um **filtro passa-faixa (band-pass) Butterworth** foi aplic
 
 O resultado é um sinal muito mais limpo, com os picos R proeminentes e a linha de base estável.
 
-*(Dica: Substitua a imagem abaixo por um print do seu gráfico de "Sinal Bruto vs. Sinal Filtrado")*
-![Comparação de Filtragem](https://i.imgur.com/8zU3iV5.png)
+
+![Comparação de Filtragem](Filtragem.png)
 
 
 ### 4. Detecção de Picos R
@@ -41,8 +41,8 @@ Com o sinal limpo, a função `find_peaks` da `SciPy` foi usada para localizar o
 * **Altura Mínima (`height`):** Os picos devem ter uma amplitude mínima para serem considerados, descartando ondas menores.
 * **Distância Mínima (`distance`):** Dois picos não podem estar muito próximos, o que evita a detecção dupla no mesmo batimento (ex: onda R e onda T).
 
-*(Dica: Substitua a imagem abaixo por um print do seu gráfico de "Detecção de Picos R")*
-![Detecção de Picos](https://i.imgur.com/rM5J1jB.png)
+
+![Detecção de Picos](detecção.png)
 
 
 ### 5. Cálculo da Frequência Cardíaca (BPM) 算出
